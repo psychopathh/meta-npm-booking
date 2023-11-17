@@ -1,19 +1,17 @@
 {
-  "name": "meta-npm-booking",
-  "private": true,
+  "name": "@psychopath4444.text/meta-npm-booking",
   "license": "MIT",
   "version": "0.0.3",
   "type": "module",
   "files": [
     "dist"
   ],
-  "main": "./dist/react-ts-lib.umd.js",
-  "module": "./dist/react-ts-lib.es.js",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/meta-npm-booking.umd.cjs",
+  "module": "./dist/meta-npm-booking.js",
   "exports": {
     ".": {
-      "import": "./dist/react-ts-lib.es.js",
-      "require": "./dist/react-ts-lib.umd.js"
+      "import": "./dist/meta-npm-booking.js",
+      "require": "./dist/meta-npm-booking.umd.cjs"
     }
   },
   "scripts": {
@@ -51,11 +49,5 @@
     "typescript": "^5.2.2",
     "vite": "^5.0.0",
     "vite-plugin-dts": "^3.6.3"
-  },
-  "publishConfig": {
-    "@psychopathh:registry": "https://npm.pkg.github.com"
-  },
-  "repository": {
-    "url": "https://github.com/psychopathh/meta-npm-booking"
   }
 }

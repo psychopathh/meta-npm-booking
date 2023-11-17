@@ -6,10 +6,10 @@ import dts from "vite-plugin-dts";
 export default defineConfig({
   build: {
     lib: {
-      entry: path.resolve("src", 'index.tsx'),
+      entry: path.resolve(__dirname, 'src/index.tsx'),
       name: 'meta-npm-booking',
-      formats: ["es", "umd"],
-      fileName: (format) => `meta-npm-booking.${format}.js`
+      // formats: ["es", "umd", 'cjs'],
+      fileName: "meta-npm-booking"
     },
     rollupOptions: {
       external: ['react', 'react-dom'],
