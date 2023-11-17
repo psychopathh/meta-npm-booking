@@ -1,12 +1,14 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from 'path'
+import dts from "vite-plugin-dts";
 
 export default defineConfig({
   build: {
     lib: {
       entry: path.resolve("src", 'index.tsx'),
       name: 'meta-npm-booking',
+      formats: ["es", "umd"],
       fileName: (format) => `meta-npm-booking.${format}.js`
     },
     rollupOptions: {
@@ -18,5 +20,7 @@ export default defineConfig({
       }
     }
   },
-  plugins: [react()]
+  plugins: [react(), dts({
+    insertTypesEntry: true,
+  }),]
 })
