@@ -49,5 +49,11 @@
     "eslint-plugin-react-refresh": "^0.4.4",
     "typescript": "^5.2.2",
     "vite": "^5.0.0"
+  },
+  "publishConfig": {
+    "@psychopathh:registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "url": "https://github.com/psychopathh/meta-npm-booking"
   }
 }
